@@ -1,0 +1,36 @@
+@import '../../theme/palette';
+
+.postman {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 200px;
+  background: $paletteColor5;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  .postManEnter {
+    opacity: .01;
+
+  }
+  .postManEnterActive {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+  }
+  .postManExit {
+    opacity: 1;
+
+  }
+  .postManExitActive {
+    opacity: .01;
+    transition: opacity 4000ms ease-in;
+  }
+}

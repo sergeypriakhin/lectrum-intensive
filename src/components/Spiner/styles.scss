@@ -1,0 +1,29 @@
+@import '../../theme/palette';
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spiner {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  width: 60px;
+  color: $paletteColor5;
+  font-size: 12px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 46px;
+    animation: spin infinite 20s linear;
+    background-image: url(../../theme/assets/react.jpg);
+    background-size: contain;
+  }
+}

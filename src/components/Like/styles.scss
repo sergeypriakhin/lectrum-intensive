@@ -1,0 +1,44 @@
+.like {
+  .ul {
+    position: absolute;
+    background-color: #4267B2;
+    z-index: 1;
+    list-style: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #000;
+    li {
+      padding: 2px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  bottom: 5px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../theme/assets/like.png);
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: -13px 0;
+    cursor: pointer;
+  }
+
+  &.liked {
+    &::before {
+      background-position: 2px 0px;
+    }
+  }
+}
